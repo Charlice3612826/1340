@@ -49,12 +49,14 @@ int judge(int x, int y)
 void ChooseMode()
 {	
 	char s[2];
-	cout << "Please select Mode \" Player vs Player \"(p) or \" Man versus Machine \"(a):" << endl;
+	printf("Please select the mode for\"pvp\"(p)or\"pve\"(a) or Residual situation(r):");
 	scanf("%s", &s);
 	if(s[0] == 'p')
 		mode = 0;
 	else if(s[0] == 'a')
 		mode = 1;
+	else if(s[0] == 'r')
+		mode = 2;
 	else
 	{
 		cout << "\nplease type in letter p or  a." << endl;
