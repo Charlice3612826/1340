@@ -1,6 +1,11 @@
 # define _CRT_SECURE_NO_WARNINGS
 # include <iostream>
 # include <iomanip>
+#include <cstdlib> // for calling srand(), rand()
+#include <ctime> // for calling time()
+
+#include <fstream>
+#include <sstream>
 using namespace std;
 #ifndef GOBANG_H
 #define GOBANG_H
