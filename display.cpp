@@ -12,7 +12,7 @@ void DisplayBoard()
 	int line;
 	char ary;
 	
-	system("cls");   //clear screen
+	
 
 	for(j = 0,line = 15; j <= SIZE - 1; j++)
 	{
