@@ -152,7 +152,7 @@ int main()
 			
 			
 			ChangeTemPieces(WHITEtem);
-			MoveP(&Board[0][0], WHITEtem);
+			MoveAi(WHITEtem);
 			ChangeScoreBoard(Posi[0], Posi[1], Board);
 			DisplayBoard();
 			if(judge(x, y) == WHITE)
