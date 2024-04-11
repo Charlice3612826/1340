@@ -46,7 +46,7 @@ int main()
 			y = Posi[1];
 			ChangeScoreBoard(Posi[0], Posi[1], Board);
 			DisplayBoard();
-			cout << "drop chess piece at" << char(y + 'A') << 15 - x << "." << endl;
+			cout << "drop chess piece at " << char(y + 'A') << 15 - x << "." << endl;
 			if(judge(x, y) == WHITE)
 			{
 				cout << "White win!" << endl;
@@ -64,7 +64,7 @@ int main()
 			ChangeScoreBoard(Posi[0], Posi[1], Board);
 			DisplayBoard();
 	
-			cout << "drop chess piece at" << char(y + 'A') << 15 - x << "." << endl; 
+			cout << "drop chess piece at " << char(y + 'A') << 15 - x << "." << endl; 
 			if(judge(x, y) == BLACK)
 			{
 				cout << "Black win!" << endl;
