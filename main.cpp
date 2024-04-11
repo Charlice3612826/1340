@@ -1,9 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
-# include <cstdio>
-# include <iostream>
 # include "gobang.h"
 #include "string"
-# include <cstdlib>
 
 
 int main()
