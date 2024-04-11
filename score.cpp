@@ -308,7 +308,7 @@ int LineState(int *pLineArray) 						//Process the chess pattern into the desire
 	{
 		if(*(pLineArray + flag_l) + *(pLineArray + flag_u) == 0) return L4;	// Determine whether the chess type is alive or not according to the boundary
 	}
-	}
+	
 	// -ooo-
 	if(cnt_max == 3)
 	{
