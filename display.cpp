@@ -82,7 +82,7 @@ void DisplayBoard()
 		}
 	}
 	
-	cout << "   ";
+	cout << "  ";
 	for (ary = 'A'; ary < 'A' + SIZE ; ary++)
 		cout << ary ;
 	
