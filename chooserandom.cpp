@@ -51,7 +51,7 @@ void chooseboard(){
 
     
     if (c==3){
-        ifstream file("random2.txt");
+        ifstream file("random3.txt");
         if (file.is_open()) {
             for (int i = 0; i < 15; ++i) {
                 string line;
