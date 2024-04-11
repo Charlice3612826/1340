@@ -44,7 +44,7 @@ void chooseboard(){
                     }
                 }
             } 
-            // 关闭文件
+            // close
             file.close();
         }
     }
@@ -65,7 +65,7 @@ void chooseboard(){
                     }
                 }
             } 
-            close
+            //close
             file.close();
         }
     }
