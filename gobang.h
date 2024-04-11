@@ -60,6 +60,6 @@ void InitBoardArray();  			//initialize empty chessboard
 void ChangeTemPieces(int piece); 	//turn tem chess piece to normal chess piece 
 void PrintBoardArray(int *pBoard); 	//for test
 
-
+void chooseboard();
 
 #endif
