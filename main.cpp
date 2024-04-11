@@ -12,7 +12,7 @@ int main()
 	
 	ChooseMode();
 	
-	if(mode) // man vs machine mode 
+	if(mode==1) // man vs machine mode 
 	{
 		// initial 
 		InitBoardArray();
@@ -85,7 +85,7 @@ int main()
 		}	
 	}
 	
-	else //man vs man 
+	if (mode==0) //man vs man 
 	{
 		int i;
 		
@@ -124,7 +124,49 @@ int main()
 			}	
 		}		
 	}
-	
+	if (mode==2){
+		int i;
+		
+		InitBoardArray();
+		chooseboard();
+		DisplayBoard();
+		
+		while(1)
+		{
+			 
+			ChangeTemPieces(BLACKtem);
+			MoveP(&Board[0][0], BLACKtem);
+			x = Posi[0];
+			y = Posi[1];
+			if(judge(x, y) == -1)
+			{
+				cout<<"Restricted move"<<endl;
+				break;   
+			}
+			
+			ChangeScoreBoard(x, y, Board);
+			cout<<'1'<<endl;
+			DisplayBoard();
+			if(judge(x, y) == BLACK)
+			{
+				cout<<"Black wins!"<<endl;
+				break; 
+			}
+			
+			
+			ChangeTemPieces(WHITEtem);
+			MoveP(&Board[0][0], WHITEtem);
+			ChangeScoreBoard(Posi[0], Posi[1], Board);
+			DisplayBoard();
+			if(judge(x, y) == WHITE)
+			{
+				cout <<"White wins!"<<endl;
+				break; 
+			}	
+		}		
+
+	}
+
 	while(1) //Prevent direct exit
 	{	
 		x = getchar(); 
